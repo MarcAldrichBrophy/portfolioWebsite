@@ -1,4 +1,4 @@
-console.log("init.");
+console.log("v 1.0.");
 
 // ---------Responsive-navbar-active-animation-----------
 function test(){
@@ -16,7 +16,6 @@ function test(){
 		"width": activeWidthNewAnimWidth + "px"
 	});
 	$("#navbarSupportedContent").on("click","li",function(e){
-        console.log("click");
 		$('#navbarSupportedContent ul li').removeClass("active");
 		$(this).addClass('active');
 		var activeWidthNewAnimHeight = $(this).innerHeight();
@@ -57,8 +56,6 @@ jQuery(document).ready(function($){
 	if ( path == '' ) {
 		path = 'index.html';
 	}
-
-    console.log(path);
 
 	var target = $('#navbarSupportedContent ul li a[href="'+path+'"]');
 	// Add active class to target link
