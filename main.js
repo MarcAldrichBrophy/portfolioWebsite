@@ -1,4 +1,4 @@
-console.log("v 1.0.");
+console.log("v1.2");
 
 class StickyNavigation {
 	
@@ -7,8 +7,8 @@ class StickyNavigation {
 		this.currentTab = null;
 		this.tabContainerHeight = 70;
 		let self = this;
-		$('.et-hero-tab').click(function() { 
-			self.onTabClick(event, $(this)); 
+		$('.et-hero-tab').click(function(eventObject) {
+			self.onTabClick(eventObject, $(this)); 
 		});
 		$(window).scroll(() => { this.onScroll(); });
 		$(window).resize(() => { this.onResize(); });
@@ -17,17 +17,17 @@ class StickyNavigation {
 	onTabClick(event, element) {
 		event.preventDefault();
 		let scrollTop = $(element.attr('href')).offset().top - this.tabContainerHeight + 1;
-		$('html, body').animate({ scrollTop: scrollTop }, 600);
+		$('html, body').animate({ scrollTop: scrollTop }, 300);
 	}
 	
 	onScroll() {
 		this.checkTabContainerPosition();
-    this.findCurrentTabSelector();
+        this.findCurrentTabSelector();
 	}
 	
 	onResize() {
 		if(this.currentId) {
-			this.setSliderCss();
+		    this.setSliderCss();
 		}
 	}
 	
@@ -73,5 +73,6 @@ class StickyNavigation {
 	}
 	
 }
-
-new StickyNavigation();
+$(document).ready(function() {
+    new StickyNavigation();
+});
