@@ -55,13 +55,63 @@ body .container section #skillUl {
 }
 body .container section #skillLi {
   text-align: center;
-  border: 1px solid rgb(0, 0, 0);
   background-color: #ffffff;
   color: rgb(0, 0, 0);
   padding: 10px 20px;
   margin: 3px 3px;
   flex-basis: 10%;
   width: 85vw;
+  border-radius: 10%;
+}
+body .container section #certContainer {
+  display: flex;
+  justify-content: center;
+  height: 50vh;
+  top: 40vh;
+  left: 50vw;
+  position: relative;
+  transform: translate(-50%, -50%);
+}
+body .container section #certUl {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-content: flex-start;
+  flex-wrap: wrap;
+}
+body .container section img {
+  height: 50vh;
+}
+body .container section .img__wrap {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  padding: 10px 20px;
+  margin: 3px 3px;
+  flex-basis: 10%;
+  width: 85vw;
+}
+body .container section .img__description {
+  position: absolute;
+  top: 50%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.72);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  text-align: center;
+  height: 100px;
+  line-height: 100px;
+  transition: opacity 0.2s, visibility 0.2s;
+}
+body .container section .img__wrap:hover .img__description {
+  visibility: visible;
+  opacity: 1;
 }
 body .container section:nth-of-type(2) {
   background-color: #434656;
