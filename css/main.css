@@ -3,6 +3,15 @@
   padding: 0px;
 }
 
+h1 {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 5vw;
+}
+
+p, li, a {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
 body {
   width: 100vw;
   height: 100vh;
@@ -27,10 +36,8 @@ body .container section #intro {
   animation: fadein 2s;
 }
 body .container section:nth-of-type(1) {
-  color: rgb(0, 0, 0);
-}
-body .container section:nth-of-type(2) {
-  color: #434656;
+  background-color: #434656;
+  color: #ffffff;
 }
 body .container section #skillsList {
   position: absolute;
@@ -56,15 +63,9 @@ body .container section #skillLi {
   flex-basis: 10%;
   width: 85vw;
 }
-body .container section:nth-of-type(3) {
-  color: #434656;
-}
-body .container section h1 {
-  font-family: "Courier New", Courier, monospace;
-  font-size: 5vw;
-}
-body .container section p, body .container section li {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+body .container section:nth-of-type(2) {
+  background-color: #434656;
+  color: #ffffff;
 }
 body .container section p {
   font-size: 2vw;
@@ -92,11 +93,11 @@ a {
 .et-hero-tabs h1, .et-slide h1 {
   font-size: 2rem;
   margin: 0;
+  color: #434656;
 }
 .et-hero-tabs h3, .et-slide h3 {
   font-size: 1rem;
-  letter-spacing: 0.3rem;
-  opacity: 0.6;
+  color: #434656;
 }
 
 .et-hero-tabs-container {
@@ -128,7 +129,7 @@ a {
 .et-hero-tab:hover {
   color: white;
   background: rgb(53, 134, 255);
-  transition: all 0.5s ease;
+  transition: all 0.1s ease;
 }
 
 .et-hero-tab-slider {
@@ -136,7 +137,7 @@ a {
   bottom: 0;
   width: 0;
   height: 6px;
-  background: #66B1F1;
+  background: rgb(53, 134, 255);
   transition: left 0.3s ease;
 }
 
