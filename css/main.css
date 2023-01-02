@@ -23,9 +23,11 @@ body .container section {
   scroll-snap-align: start;
 }
 body .container section #intro {
-  position: absolute;
-  top: 10%;
+  position: relative;
+  top: 20%;
   left: 5%;
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */ /* Firefox < 16 */ /* Internet Explorer */ /* Opera < 12.1 */
+  animation: fadein 2s;
 }
 body .container section:nth-of-type(1) {
   color: rgb(0, 0, 0);
@@ -225,4 +227,24 @@ body .container section .titleHeading {
     opacity: 0;
     border-radius: 50%;
   }
-}/*# sourceMappingURL=main.css.map */
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Firefox < 16 */
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Internet Explorer */
+/* Opera < 12.1 *//*# sourceMappingURL=main.css.map */
