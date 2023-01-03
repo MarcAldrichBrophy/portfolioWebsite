@@ -76,7 +76,8 @@ body {
                 margin: 3px 3px;
                 
                 flex-basis: 10%;
-                width: 85vw;
+                width: 80vw;
+                height: 3vh;
 
                 border-radius: 10%;
             }
@@ -86,6 +87,7 @@ body {
                 display: flex;
                 justify-content: center;
                 height: 50vh;
+                width: 100vw;
                 top: 40vh;
                 left: 50vw;
                 position: relative;
@@ -97,9 +99,9 @@ body {
                 display: flex;
                 justify-content: center;
             
-                flex-direction: row;
-                align-content: flex-start;
-                flex-wrap: wrap;
+                // flex-direction: row;
+                // align-content: flex-start;
+                // flex-wrap: wrap;
             }
             
             img {
