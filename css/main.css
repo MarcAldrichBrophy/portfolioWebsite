@@ -394,7 +394,7 @@ a {
   stroke-dashoffset: 778;
 }
 
-#projectCards {
+#quickCards {
   min-height: 100%;
   height: 100%;
   position: relative;
@@ -403,19 +403,19 @@ a {
   top: 50vh;
   transform: translate(-50%, -50%);
 }
-#projectCards h1 {
+#quickCards h1 {
   padding: 75px 0 30px 0;
   text-align: center;
   font-size: 30px;
   line-height: 30px;
 }
-#projectCards .buttons {
+#quickCards .buttons {
   max-width: 800px;
   margin: 0 auto;
   padding: 0;
   text-align: center;
 }
-#projectCards .buttons .button {
+#quickCards .buttons .button {
   display: inline-block;
   text-align: center;
   padding: 10px 15px;
@@ -427,7 +427,7 @@ a {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
   cursor: pointer;
 }
-#projectCards .buttons .button:hover {
+#quickCards .buttons .button:hover {
   color: white;
   background: #009bd5;
 }
