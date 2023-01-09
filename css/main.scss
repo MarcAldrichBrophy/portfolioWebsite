@@ -37,8 +37,27 @@ body {
             &:nth-of-type(1) {
                 background-color: #434656;
                 color: #ffffff;
-                height:100vh;
+                height:300vh;
             }
+
+            #projContainer {
+              position: relative;
+              top: 30vh;
+              left: 50vw;
+              transform: translate(-50%, 0%);
+              height: auto;
+              width: auto;
+              // background-color: #fff;
+              padding: 1vh, 1vh;
+            }
+
+            .projCard {
+              background-color: #000;
+              height: 75vh;
+              width: 80vw;
+              margin: 1vh;
+            }
+
             // Skill Section
             &:nth-of-type(2) {
                 background-image: linear-gradient(#434656, #1a1b22);
@@ -84,7 +103,7 @@ body {
 
             .titleHeading {
                 position:absolute;
-                top:12%;
+                top: 7%;
                 left: 50%;
                 transform: translate(-50%, -50%);
             }

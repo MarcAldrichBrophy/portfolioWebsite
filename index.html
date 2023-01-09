@@ -11,7 +11,10 @@
     <script src="main.js";></script>
 
     <script src="modal.js";></script>
-    
+    <!-- latex handler -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+    <script src="jquery.jslatex.js"></script>
+
     <link rel="stylesheet" href="css/main.css">
 
     <link rel="icon" type="image/x-icon" href="/assets/cloud.png">
@@ -25,7 +28,8 @@
         <div class="modal-background">
             <div class="modal">
                 <h2>Resume</h2>
-                <p>[attach tex file.]</p>
+                <!-- <p>[attach tex file.]</p> -->
+                <iframe id="resume" src="assets/docs/resume.txt" width="275" height="250"></iframe>
                 <svg class="modal-svg" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" preserveAspectRatio="none">
                     <rect x="0" y="0" fill="none" width="226" height="162" rx="3" ry="3"></rect>
                 </svg>
@@ -72,11 +76,23 @@
 
         <!-- Projects Section -->
         <section id="projects">
-            <div class="titleHeading">
+            <!-- <div class="titleHeading">
                 <h1>Projects</h1>
+            </div> -->
+            
+            <div id="projContainer">
+                <div class="projCard">
+                    <h2>Business Assistant - Cloud, AI</h2>
+                </div>
+                <div class="projCard">
+                    <h2>Simplified Data Handling Datastore Services</h2>
+                </div>
+                <div class="projCard">
+                    <h2>Pi Computing</h2>
+                </div>
             </div>
-
         </section>
+
         <section id="skills">
             <!-- <div class="titleHeading">
                 <h1>Skills</h1>
