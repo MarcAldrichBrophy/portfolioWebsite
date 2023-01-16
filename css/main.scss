@@ -39,7 +39,7 @@ body {
             &:nth-of-type(1) {
                 background-color: #434656;
                 color: #ffffff;
-                height:300vh;
+                height:100vh;
             }
 
             #projContainer {
@@ -50,41 +50,37 @@ body {
               top: 10vh;
               left: 50vw;
               transform: translate(-50%, 0%);
-              height: auto;
-              width: auto;
-              // background-color: #fff;
-              // padding: 1vh, 1vh;
-            }
-
-            .projCard {
-              // position: relative;
-              background-color: #000;
-              height: 75vh;
-              width: 40vw;
-              margin: 1vh;
-
-              .projText {
-                position: relative;
-                top: 5vh;
-                left: 1vw;  
+              height: 100vh;
+              width: 90vw;
+              
+              
+              .projCard {
+                // position: relative;
+                background-color: #000;
+                margin: 1vh 1vh;
                 
-                h2 {
-                  margin: 2vh;
-                  top: 1vh;
+                .projText {
+                  position: relative;
+                  top: 5vh;
+                  left: 1vw;  
+                  
+                  h2 {
+                    margin: 2vh;
+                    top: 1vh;
+                  }
+                  p {
+                    margin: 2vw;
+                    font-size: 100%;
+                    width: 90%;
+                  }
                 }
-                p {
-                  margin: 2vw;
-                  font-size: 100%;
-                  width: 90%;
-                }
-              }
 
-              .cardSkills {
-                position: relative;
-                top: 5vh;
+                .cardSkills {
+                  position: relative;
+                  top: 5vh;
+                }
               }
             }
-            
             ////////////////////////
             // Skill Section
             ////////////////////////
