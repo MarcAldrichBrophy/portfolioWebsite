@@ -25,6 +25,12 @@
         <div class="modal-background">
             <div class="modal">
                 <h2>About</h2>
+                <p>
+                    I'm a software developer with over 10 years of programming
+                    experience. I enjoy code automation through CI/CD and 
+                    utilizing cloud computing resources such as AWS, MS Azure,
+                    and GCP. My hobbies include cooking and making video games.
+                </p>
                 <svg class="modal-svg" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" preserveAspectRatio="none">
                     <rect x="0" y="0" fill="none" width="226" height="162" rx="3" ry="3"></rect>
                 </svg>
@@ -36,12 +42,16 @@
         <div id="intro">
             <h1>Hello, I'm Marc!</h1>
             <p>Software Developer <br> Cloud computing enthusiast.</p>
-        </div>
-        <div id="quickCards">
-            <div class="buttons">
-                <div id="one" class="button">About</div>
+            <div id="quickCards">
+                <div class="buttons">
+                    <div id="one" class="button">About</div>
+                </div>
+                <div class="buttons">
+                    <div id="two" class="button">Resume</div>
+                </div>
             </div>
         </div>
+        
         <!-- Circles animation. -->
         <div id="circleContainer">
             <ul class="circles">
@@ -78,16 +88,21 @@
                 <div class="projCard">
                     <!-- what and why -->
                     <div class="projText">
-                        <h2>Continuous Delivery Pipeline</h2>
+                        <h2>Art Portfolio Website</h2>
                         <p>
-                            [project description]
+                            A simple website for a client that allows them to
+                            post art dynamically to the website onto a decoupled
+                            database using Amazon RDS. 
+                            Hosted on Amazon EC2 with Amazon Linux. The project utilizes 
+                            Elastic Beanstalk for application deployment and management, 
+                            Amazon Code Pipeline for CI/CD and testing.
                         </p>
                     </div>
                     <!-- img -->
                     <div class="cardSkills">
                         <h2>Skills Implemented</h2>
                         <p>
-                            AWS, Django, Python
+                            AWS, Django, Python, HTML5, SCSS
                         </p>
                     </div>
                 </div>
@@ -99,30 +114,32 @@
                         <p>
                             To simplify file sharing during project development,
                             I created a private cloud network with Nextcloud in order
-                            to simplify file management, and avoid potential data loss. 
+                            to share and collect files, increasing productivity.
+                            Hosted on an on-premise Raspberry Pi.
                         </p>
                     </div>
                     <!-- img -->
                     <div class="cardSkills">
                        <h2>Skills Implemented</h2>
                         <p>
-                            Linux, Apache2, PHP, MariaDB, Cloud Computing
+                            Linux
                         </p> 
                     </div>
                 </div>
 
                 <div class="projCard">
                     <div class="projText">
-                        <h2>Translation & Key Points Synthesis with AI</h2>
+                        <h2>LeetCode Companion</h2>
                         <p>
-                            Document translator and key point anaylsis.
+                           This CRUD app allows users to feed their virtual pet
+                           through solving LeetCode problems.
                         </p>
                     </div>
                     <!-- img -->
                     <div class="cardSkills">
                         <h2>Skills Implemented</h2>
                         <p>
-                            MS Azure Machine Learning, Electron, Vue
+                            Electron, Django, Python, MySQL, HTML, CSS
                         </p>
                     </div>
                 </div>
@@ -144,7 +161,7 @@
                     <div class="cardSkills">
                         <h2>Skills Implemented</h2>
                         <p>
-                            Lua
+                            Lua, Data Management
                         </p>
                     </div>
                 </div>
@@ -155,30 +172,26 @@
         </section>
 
         <section id="skills">
-            <!-- <div class="titleHeading">
-                <h1>Skills</h1>
-            </div> -->
-
-            <div id="badgeContainer">
-                <img class="badgeImg" src="assets/azureAI.png">
+            <div>
+                <h1 id="badgeLabel">Certifications</h1>
+                <div id="badgeContainer">
+                    <img class="badgeImg" src="assets/azureAI.png">
+                </div>
             </div>
             
-            <div id="skillsList">
-                <ul id="skillUl">
-                    <li id="skillLi">Python</li>
-                    <li id="skillLi">Lua</li>
-                    <li id="skillLi">Linux</li>
-                    <li id="skillLi">C++</li>
-                    <li id="skillLi">MySQL</li>
-                    <li id="skillLi">HTML5</li>
-                    <li id="skillLi">SCSS</li>
-                    <li id="skillLi">CSS3</li>
-                    <li id="skillLi">JQuery</li>
-                    <li id="skillLi">Java</li>
-                    <li id="skillLi">C#</li>
-                    <li id="skillLi">MS Azure</li>
+            <div id="skills">
+                <ul>
+                    <li>Python</li>
+                    <li>Lua</li>
+                    <li>AWS</li>
+                    <li>Django</li>
+                    <li>MS Azure</li>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>SCSS</li>
                 </ul>
             </div>
+
         </section>
         
     </div>

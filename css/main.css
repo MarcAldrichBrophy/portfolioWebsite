@@ -38,11 +38,11 @@ body .container section:nth-of-type(1) {
 }
 body .container section #projContainer {
   position: relative;
-  top: 10vh;
   width: 100vw;
   height: auto;
   display: grid;
   place-items: center;
+  margin: 2vh 2vh;
 }
 body .container section #projContainer .projCard {
   width: 60vw;
@@ -80,41 +80,38 @@ body .container section:nth-of-type(2) {
   background-color: #434656;
   color: #ffffff;
 }
+body .container section #badgeLabel {
+  position: relative;
+  top: 5vh;
+  left: 5vw;
+}
 body .container section #badgeContainer {
-  width: 100vw;
-  height: 100vh;
+  position: relative;
+  top: 7vh;
+  width: 50vw;
+  height: auto;
   display: grid;
   place-items: center;
 }
 body .container section #badgeContainer .badgeImg {
+  aspect-ratio: 1/1;
+  max-width: 50vw;
+  max-height: 50vh;
+}
+body .container section #skills {
+  position: relative;
+  top: 10vh;
+  width: 50vw;
   height: 50vh;
-  width: auto;
 }
-body .container section #skillsList {
-  position: absolute;
-  top: 99%;
-  left: 50%;
-  transform: translate(-50%, -100%);
-}
-body .container section #skillUl {
+body .container section #skills ul {
   list-style-type: none;
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  align-content: flex-start;
-  flex-wrap: wrap;
-}
-body .container section #skillLi {
   text-align: center;
-  background-color: #ffffff;
-  color: rgb(0, 0, 0);
-  padding: 10px 20px;
-  margin: 3px 3px;
-  flex-basis: 10%;
-  width: 80vw;
-  height: 3vh;
-  border-radius: 10%;
-  font-size: 1.5vw;
+}
+body .container section #skills ul li {
+  background-color: #fff;
+  color: black;
+  width: auto;
 }
 body .container section p {
   font-size: 2vw;
@@ -418,6 +415,7 @@ a {
   border-radius: 3px;
   font-weight: 300;
   position: relative;
+  width: 50vw;
 }
 #modal-container .modal-background .modal h2 {
   font-size: 25px;
@@ -427,6 +425,7 @@ a {
 #modal-container .modal-background .modal p {
   font-size: 18px;
   line-height: 22px;
+  text-align: left;
 }
 #modal-container .modal-background .modal .modal-svg {
   position: absolute;
@@ -446,11 +445,9 @@ a {
 #quickCards {
   min-height: 100%;
   height: 100%;
-  position: absolute;
+  position: relative;
   z-index: 1;
-  left: 50vw;
-  top: 110vh;
-  transform: translate(-50%, -50%);
+  transform: translate(-5vw, 10vh);
 }
 #quickCards h1 {
   padding: 75px 0 30px 0;
@@ -459,10 +456,7 @@ a {
   line-height: 30px;
 }
 #quickCards .buttons {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 0;
-  text-align: center;
+  text-align: left;
 }
 #quickCards .buttons .button {
   display: inline-block;

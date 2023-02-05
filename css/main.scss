@@ -43,14 +43,15 @@ body {
                 height: auto;
             }
 
-             #projContainer {
+            #projContainer {
               position: relative;
-              top: 10vh;
+              // top: 10vh;
               width: 100vw;
               height: auto;
 
               display: grid;
               place-items: center;
+              margin: 2vh 2vh;
 
             //   position: relative;
             //   display: grid;
@@ -108,53 +109,48 @@ body {
                 background-image: linear-gradient(#434656, #1a1b22);
                 background-color: #434656;
                 color: #ffffff;
-                
             }
-
+            
+            // Badges
+            #badgeLabel {
+              position: relative;
+              top: 5vh;
+              left: 5vw;
+            }
             #badgeContainer {
-
-              width: 100vw;
-              height: 100vh;
+              position: relative;
+              top: 7vh;
+              width: 50vw;
+              height: auto;
               display: grid;
               place-items: center;
 
               .badgeImg {
-                height: 50vh;
-                width: auto;
+                aspect-ratio: 1 / 1;
+                max-width: 50vw;
+                max-height: 50vh;
               }
             }
 
-            #skillsList {
-                position: absolute;
-                top: 99%;
-                left: 50%;
-                transform: translate(-50%, -100%);
-            }
-            #skillUl {
+            //Skills
+
+            #skills {
+              position: relative;
+              top: 10vh;
+              width: 50vw;
+              height: 50vh;
+              ul {
                 list-style-type: none;
-                display: flex;
-                justify-content: center;
-            
-                flex-direction: row;
-                align-content: flex-start;
-                flex-wrap: wrap;
-            }
-            #skillLi {
                 text-align: center;
-                background-color: #ffffff;
-                color: rgb(0, 0, 0);
-                padding: 10px 20px;
-                margin: 3px 3px;
-                
-                flex-basis: 10%;
-                width: 80vw;
-                height: 3vh;
-
-                border-radius: 10%;
-                font-size: 1.5vw;
+                li {
+                  background-color: #fff;
+                  color: black;
+                  width: auto;
+                }
+              }
             }
 
-
+            //////
             p {
                 font-size: 2vw;
             }
@@ -471,6 +467,7 @@ a {
         border-radius:3px;
         font-weight:300;
         position:relative;
+        width: 50vw;
         h2 {
           font-size:25px;
           line-height:25px;
@@ -479,6 +476,7 @@ a {
         p {
           font-size:18px;
           line-height:22px;
+          text-align: left;
         }
         .modal-svg {
           position:absolute;
@@ -502,22 +500,22 @@ a {
     min-height:100%;
     height:100%;
     // background:white;
-    position:absolute;
-    z-index:1;
-    left: 50vw;
-    top: 110vh;
-    transform: translate(-50%, -50%);
+    position: relative;
+    z-index: 1;
+    //left: -45vw;
+    //top: 40vh;
+    transform: translate(-5vw, 10vh);
     h1 {
       padding:75px 0 30px 0;
-      text-align:center;
+      text-align: center;
       font-size:30px;
       line-height:30px;
     }
     .buttons {
-      max-width:800px;
-      margin:0 auto;
-      padding:0;
-      text-align:center;
+      //max-width: 800px;
+      //margin:0 auto;
+      //padding:0;
+      text-align: left;
       .button {
         display:inline-block;
         text-align:center;
