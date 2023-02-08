@@ -1,6 +1,6 @@
 * {
-    margin: 0px;
-    padding: 0px;
+  margin: 0px;
+  padding: 0px;
 }
 
 h1 {
@@ -14,6 +14,7 @@ p, li, a {
 
 html, body {
     //background-color: #868686;
+    
     &.modal-active {
         overflow: hidden;
     }
@@ -41,6 +42,7 @@ body {
                 background-color: #434656;
                 color: #ffffff;
                 height: auto;
+                min-height: 100vh;
             }
 
             #projContainer {
@@ -52,17 +54,6 @@ body {
               display: grid;
               place-items: center;
               margin: 2vh 2vh;
-
-            //   position: relative;
-            //   display: grid;
-            //   grid-template-columns: 1fr 1fr;
-
-            //   top: 10vh;
-            //   left: 50vw;
-            //   transform: translate(-50%, 0%);
-            //   height: 100vh;
-            //   width: 90vw;
-              
               
               .projCard {
                 width: 60vw;
@@ -109,6 +100,8 @@ body {
                 background-image: linear-gradient(#434656, #1a1b22);
                 background-color: #434656;
                 color: #ffffff;
+                height: 100vh;
+                display: flex;
             }
             
             // Badges
@@ -116,43 +109,55 @@ body {
               position: relative;
               top: 5vh;
               //left: 5vw;
-              text-align: center;
+              text-align: left;
+              background-color: rgb(53, 134, 255);;
+              color: #fff;
+              padding-left: 5vw;
+              padding-top: 1vh;
             }
             #badgeContainer {
               position: relative;
               top: 7vh;
-              width: 100vw;
-              height: auto;
+              //left: 50vw;
+              width: 90vw;
+              height: 60vh;
               display: grid;
-              place-items: center;
+              transform: translate(5vw,0);
+             
+              grid-template-columns: 25vw 25vw;
+              grid-template-rows: 70vh;
+              grid-auto-flow: column;
+              justify-content: space-evenly;
+              justify-items: center;
+              align-items: center;
+              align-content: space-evenly;
 
               .badgeImg {
                 aspect-ratio: 1 / 1;
                 max-width: 50vw;
                 max-height: 50vh;
+                mix-blend-mode: color-burn;
               }
             }
 
             //Skills
 
-            #skills {
-              position: relative;
-              top: 10vh;
-              width: 50vw;
-              height: 50vh;
+            #skillList {
+              top: 100vh;
+              height: 20vh;
+              transform: translate(-90vw,0);
+              align-self: flex-end;
               ul {
-                list-style-type: none;
+                width: 100vw;
                 text-align: center;
                 li {
+                  display: inline-block;
+                  margin-top: 10px;
+                  margin: 10px, 0;
                   background-color: #fff;
                   color: black;
-                  //width: auto;
-
-                  // border: 1px solid blue;
-                  display: inline-block;
-                  vertical-align: top;
-                  height: auto;
                   width: 100px;
+                  border-radius: 1em;
                 }
               }
             }
@@ -188,11 +193,6 @@ a {
     text-align: center;
     padding: 0 2em;
 
-    // h1 {
-    //     font-size: 2rem;
-    //     margin: 0;
-    //     color: #434656;
-    // }
     // Intro Section
     #intro {
         position: absolute;
