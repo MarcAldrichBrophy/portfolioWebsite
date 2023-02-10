@@ -67,7 +67,7 @@ body {
                 .projText {
                   top: 5vh;
                   left: 1vw;
-                  width: auto;
+                  width: 60vw;
                   // height: 100vh;
 
                   h2 {
@@ -78,6 +78,11 @@ body {
                     margin: 2vw;
                     font-size: 100%;
                     width: 90%;
+                  }
+
+                  img {
+                    max-height: 100vh;
+                    max-width: 60vw;
                   }
                 }
 

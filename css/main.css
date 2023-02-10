@@ -57,7 +57,7 @@ body .container section #projContainer .projCard {
 body .container section #projContainer .projCard .projText {
   top: 5vh;
   left: 1vw;
-  width: auto;
+  width: 60vw;
 }
 body .container section #projContainer .projCard .projText h2 {
   margin: 2vh;
@@ -67,6 +67,10 @@ body .container section #projContainer .projCard .projText p {
   margin: 2vw;
   font-size: 100%;
   width: 90%;
+}
+body .container section #projContainer .projCard .projText img {
+  max-height: 100vh;
+  max-width: 60vw;
 }
 body .container section #projContainer .projCard .cardSkills {
   position: relative;
